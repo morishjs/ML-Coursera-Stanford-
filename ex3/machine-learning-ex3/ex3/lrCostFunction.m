@@ -46,7 +46,7 @@ h = sigmoid(X * theta);
 %1 X 1 => cost function
 J = ((-y)' * log(h) - (1-y)'*log(1-h))/m;
 
-J = J + lambda/(2*m) * sum(theta.^2);
+J = J + lambda/(2*m) * sum(theta(2:end).^2);
 
 %this vectorizing doesn't have the problem.
 %400 X 1, gradient of non-reg
