@@ -30,7 +30,7 @@ X2 = [ones(m,1) X2'];
 
 h = sigmoid(Theta2 * X2');
 
-[M,p] = max(h', [], 2);
+b[M,p] = max(h', [], 2);
 
 
 
