@@ -30,10 +30,9 @@ X = [ones(m, 1) X];
 %       for each row.
 %       
 
-p = zeros(num_labels,1);
+p = zeros(m,1);
 A = all_theta * X';
-p = max(A, [], 2);
-p = p';
+[M,p] = max(A', [], 2);
 
 
 
